@@ -6,7 +6,14 @@
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial deploy of Rocket Tracker with 3D model credit\n\nAdded credit attribution for Starship 3D model by @Caspar_Stanley.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git branch:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git -C /Users/stetik/.gemini/antigravity/scratch/rocket-tracker remote set-url:*)",
+      "Bash(git -C /Users/stetik/.gemini/antigravity/scratch/rocket-tracker push -u origin main)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nFix Netlify build: serve as static site\n\nNo build step needed — site is pre-built.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(ln:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd dist symlink for Netlify deploy compatibility\n\nNetlify UI has publish dir hardcoded to ''dist''.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git mv:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
