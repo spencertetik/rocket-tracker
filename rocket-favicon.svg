@@ -1,6 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="50" fill="#000000"/>
-  <path d="M50 15 C50 15 25 50 25 70 C25 85 35 90 35 90 L45 80 L50 90 L55 80 L65 90 C65 90 75 85 75 70 C75 50 50 15 50 15 Z" fill="#ff6600" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="50" cy="55" r="12" fill="#ffffff" stroke="#000000" stroke-width="2"/>
-  <path d="M50 15 L50 43" stroke="#ffffff" stroke-width="1" stroke-linecap="round"/>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="50" fill="#111111"/>
+
+  <!-- Exhaust flame -->
+  <path d="M44 78 L50 92 L56 78" fill="#ff4400" opacity="0.9"/>
+  <path d="M46 78 L50 86 L54 78" fill="#ffaa00"/>
+
+  <!-- Rocket body - cylindrical with rounded nose -->
+  <rect x="42" y="30" width="16" height="48" rx="2" fill="#e8e8e8" stroke="#999" stroke-width="0.5"/>
+
+  <!-- Nose cone -->
+  <path d="M42 30 Q42 18 50 12 Q58 18 58 30 Z" fill="#e8e8e8" stroke="#999" stroke-width="0.5"/>
+
+  <!-- Body stripe -->
+  <rect x="42" y="55" width="16" height="6" fill="#222"/>
+
+  <!-- Window -->
+  <circle cx="50" cy="38" r="5" fill="#44aaff" stroke="#666" stroke-width="1"/>
+  <circle cx="50" cy="38" r="3" fill="#66ccff" opacity="0.6"/>
+
+  <!-- Left fin -->
+  <path d="M42 65 L32 78 L42 78 Z" fill="#ff4400" stroke="#cc3300" stroke-width="0.5"/>
+
+  <!-- Right fin -->
+  <path d="M58 65 L68 78 L58 78 Z" fill="#ff4400" stroke="#cc3300" stroke-width="0.5"/>
+
+  <!-- Grid fins (small details at top) -->
+  <rect x="38" y="26" width="4" height="3" rx="0.5" fill="#999"/>
+  <rect x="58" y="26" width="4" height="3" rx="0.5" fill="#999"/>
 </svg>

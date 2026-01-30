@@ -1,3 +1,3 @@
 [build]
-  command = "mkdir -p dist && cp -r assets index.html rocket-favicon.svg vite.svg og-image.png booster.mtl booster.obj ship.mtl ship.obj 'starship b9s25.obj' 'flight 7 - launch and landing.mp3' 'flight11-.mp3' launch.mp3 dist/"
+  command = "mkdir -p dist && cp -r assets index.html rocket-favicon.svg apple-touch-icon.png vite.svg og-image.png booster.mtl booster.obj ship.mtl ship.obj 'starship b9s25.obj' 'flight 7 - launch and landing.mp3' 'flight11-.mp3' launch.mp3 dist/"
   publish = "dist"
