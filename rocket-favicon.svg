@@ -1,31 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Background circle -->
-  <circle cx="50" cy="50" r="50" fill="#111111"/>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d0d0d0"/>
+      <stop offset="40%" stop-color="#f5f5f5"/>
+      <stop offset="100%" stop-color="#b0b0b0"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6600"/>
+      <stop offset="100%" stop-color="#ff2200"/>
+    </linearGradient>
+    <linearGradient id="innerflame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffcc00"/>
+      <stop offset="100%" stop-color="#ff6600"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+  </defs>
 
-  <!-- Exhaust flame -->
-  <path d="M44 78 L50 92 L56 78" fill="#ff4400" opacity="0.9"/>
-  <path d="M46 78 L50 86 L54 78" fill="#ffaa00"/>
+  <!-- Background -->
+  <circle cx="50" cy="50" r="50" fill="url(#bg)"/>
 
-  <!-- Rocket body - cylindrical with rounded nose -->
-  <rect x="42" y="30" width="16" height="48" rx="2" fill="#e8e8e8" stroke="#999" stroke-width="0.5"/>
+  <!-- Outer flame glow -->
+  <ellipse cx="50" cy="82" rx="8" ry="4" fill="#ff4400" opacity="0.3"/>
 
-  <!-- Nose cone -->
-  <path d="M42 30 Q42 18 50 12 Q58 18 58 30 Z" fill="#e8e8e8" stroke="#999" stroke-width="0.5"/>
+  <!-- Exhaust flame outer -->
+  <path d="M44 74 C46 82, 48 90, 50 94 C52 90, 54 82, 56 74" fill="url(#flame)"/>
+  <!-- Exhaust flame inner -->
+  <path d="M46 74 C47.5 80, 49 86, 50 89 C51 86, 52.5 80, 54 74" fill="url(#innerflame)"/>
 
-  <!-- Body stripe -->
-  <rect x="42" y="55" width="16" height="6" fill="#222"/>
+  <!-- Rocket body -->
+  <path d="M43 32 L43 74 L57 74 L57 32 Q57 14, 50 8 Q43 14, 43 32 Z" fill="url(#body)"/>
 
-  <!-- Window -->
-  <circle cx="50" cy="38" r="5" fill="#44aaff" stroke="#666" stroke-width="1"/>
-  <circle cx="50" cy="38" r="3" fill="#66ccff" opacity="0.6"/>
+  <!-- Body dark band -->
+  <rect x="43" y="60" width="14" height="5" fill="#333" rx="0"/>
+  <rect x="43" y="67" width="14" height="2" fill="#555"/>
 
   <!-- Left fin -->
-  <path d="M42 65 L32 78 L42 78 Z" fill="#ff4400" stroke="#cc3300" stroke-width="0.5"/>
+  <path d="M43 60 C38 65, 33 72, 31 78 L43 74 Z" fill="#ff4400"/>
+  <path d="M43 60 C38 65, 33 72, 31 78 L43 74 Z" fill="#cc2200" opacity="0.3"/>
 
   <!-- Right fin -->
-  <path d="M58 65 L68 78 L58 78 Z" fill="#ff4400" stroke="#cc3300" stroke-width="0.5"/>
+  <path d="M57 60 C62 65, 67 72, 69 78 L57 74 Z" fill="#ff4400"/>
 
-  <!-- Grid fins (small details at top) -->
-  <rect x="38" y="26" width="4" height="3" rx="0.5" fill="#999"/>
-  <rect x="58" y="26" width="4" height="3" rx="0.5" fill="#999"/>
+  <!-- Window -->
+  <circle cx="50" cy="36" r="5.5" fill="#1a3a5c" stroke="#aaa" stroke-width="1"/>
+  <circle cx="50" cy="36" r="4" fill="#2a5a8c"/>
+  <path d="M47 34 Q50 32, 53 34 Q50 33, 47 34 Z" fill="#5599cc" opacity="0.7"/>
+
+  <!-- Nose highlight -->
+  <path d="M47 18 Q48 14, 50 10 Q49 14, 48 22 Z" fill="#ffffff" opacity="0.25"/>
+
+  <!-- Body center highlight -->
+  <rect x="47" y="32" width="2" height="30" rx="1" fill="#ffffff" opacity="0.12"/>
 </svg>
